@@ -1,0 +1,11 @@
+symbol,ex_date,action_type,ratio,old_face_value,new_face_value,dividend_amount,remarks
+TATASTEEL,2022-07-28,SPLIT,10:1,10.0,1.0,0.0,Sub-division of equity shares from Rs 10 to Rs 1
+RELIANCE,2024-10-28,BONUS,1:1,10.0,10.0,0.0,Bonus issue 1:1
+TCS,2018-06-01,BONUS,1:1,1.0,1.0,0.0,Bonus issue 1:1
+WIPRO,2019-03-06,BONUS,1:3,2.0,2.0,0.0,Bonus issue 1:3
+EICHERMOT,2020-08-24,SPLIT,10:1,10.0,1.0,0.0,Sub-division of equity shares from Rs 10 to Rs 1
+BAJAJFINSV,2022-09-13,SPLIT_BONUS,5:1_1:1,5.0,1.0,0.0,Stock split 5:1 and Bonus 1:1
+HDFCBANK,2019-09-19,SPLIT,2:1,2.0,1.0,0.0,Sub-division from Rs 2 to Rs 1
+INFY,2018-09-04,BONUS,1:1,5.0,5.0,0.0,Bonus issue 1:1
+ITC,2023-05-30,DIVIDEND,0:0,1.0,1.0,9.5,Final and Special Dividend Rs 9.5
+COALINDIA,2023-11-21,DIVIDEND,0:0,10.0,10.0,15.25,Interim Dividend Rs 15.25
