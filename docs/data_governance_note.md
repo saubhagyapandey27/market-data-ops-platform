@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-09-01 17:56:19 UTC`  
+**Timestamp**: `2026-09-02 18:00:24 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -37,10 +37,9 @@ This governance note formalizes the reconciliation-grade quality controls and au
 ### 3. Quarantine Workflow & Root-Cause Audit Trail
 Records failing any validation rule are diverted from production parquet tables into partitioned quarantine storage (`data/lake/quarantine/`).
 
-| `2024-03-15` | **nse_bhavcopy** | `STALECO` | `STALE_QUOTE_DETECTED` | Zero volume & identical price for 3 sessions | **WARNING** |
-| `2024-06-20` | **nse_bhavcopy** | `UNEXPLO` | `UNEXPLAINED_PRICE_SHOCK` | 35% overnight drop without registered CA | **WARNING** |
-| `2024-09-10` | **amfi_nav** | `119042` | `DOMAIN_CONSTRAINT_VIOLATION` | Non-positive NAV value detected (<=0) | **CRITICAL** |
-| `2024-11-04` | **rbi_fx** | `USD` | `HASH_COUNT_MISMATCH` | Ingestion byte count deviation resolved | **WARNING** |
+| `2026-09-02` | **nse_bhavcopy** | `ANNU` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 23.6% without registered corporate action (prev=99.0, close=75.6) | **WARNING** |
+| `2026-09-02` | **nse_bhavcopy** | `INDIAGLYCO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 78.8% without registered corporate action (prev=1111.7, close=236.2) | **WARNING** |
+| `2026-09-02` | **nse_bhavcopy** | `RATNA-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 39.9% without registered corporate action (prev=27.35, close=16.45) | **WARNING** |
 
 ---
 
