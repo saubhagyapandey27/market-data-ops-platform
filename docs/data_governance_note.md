@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-09-10 17:48:49 UTC`  
+**Timestamp**: `2026-09-11 17:51:33 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -38,11 +38,11 @@ This governance note formalizes the reconciliation-grade quality controls and au
 Records failing any validation rule are diverted from production parquet tables into partitioned quarantine storage (`data/lake/quarantine/`).
 
 | `2026-09-10` | **nse_bhavcopy** | `SRGHFL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=243.75, close=195.0) | **WARNING** |
+| `2026-09-11` | **nse_bhavcopy** | `IDEALTECHO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 42.2% without registered corporate action (prev=171.0, close=98.9) | **WARNING** |
+| `2026-09-11` | **nse_bhavcopy** | `PGIL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 50.1% without registered corporate action (prev=2378.4, close=1187.7) | **WARNING** |
+| `2026-09-11` | **nse_bhavcopy** | `SRGHFL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=195.0, close=156.0) | **WARNING** |
 | `2026-09-02` | **nse_bhavcopy** | `ANNU` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 23.6% without registered corporate action (prev=99.0, close=75.6) | **WARNING** |
 | `2026-09-02` | **nse_bhavcopy** | `INDIAGLYCO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 78.8% without registered corporate action (prev=1111.7, close=236.2) | **WARNING** |
-| `2026-09-02` | **nse_bhavcopy** | `RATNA-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 39.9% without registered corporate action (prev=27.35, close=16.45) | **WARNING** |
-| `2026-09-04` | **nse_bhavcopy** | `DUCON-RE1` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 40.0% without registered corporate action (prev=0.65, close=0.39) | **WARNING** |
-| `2026-09-04` | **nse_bhavcopy** | `TCC` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 81.1% without registered corporate action (prev=233.13, close=44.1) | **WARNING** |
 
 ---
 
