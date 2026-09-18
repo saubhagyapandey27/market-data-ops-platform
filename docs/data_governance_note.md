@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-09-17 18:28:50 UTC`  
+**Timestamp**: `2026-09-18 17:49:38 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -39,10 +39,10 @@ Records failing any validation rule are diverted from production parquet tables 
 
 | `2026-09-15` | **nse_bhavcopy** | `PNCINFRA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=175.4, close=140.32) | **WARNING** |
 | `2026-09-10` | **nse_bhavcopy** | `SRGHFL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=243.75, close=195.0) | **WARNING** |
+| `2026-09-18` | **nse_bhavcopy** | `ORIANA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 79.9% without registered corporate action (prev=1348.85, close=271.75) | **WARNING** |
 | `2026-09-11` | **nse_bhavcopy** | `IDEALTECHO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 42.2% without registered corporate action (prev=171.0, close=98.9) | **WARNING** |
 | `2026-09-11` | **nse_bhavcopy** | `PGIL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 50.1% without registered corporate action (prev=2378.4, close=1187.7) | **WARNING** |
 | `2026-09-11` | **nse_bhavcopy** | `SRGHFL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=195.0, close=156.0) | **WARNING** |
-| `2026-09-17` | **nse_bhavcopy** | `IDEALTECHO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=116.0, close=92.8) | **WARNING** |
 
 ---
 
