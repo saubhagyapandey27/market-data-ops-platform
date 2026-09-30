@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-09-29 19:35:26 UTC`  
+**Timestamp**: `2026-09-30 19:35:30 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -38,11 +38,11 @@ This governance note formalizes the reconciliation-grade quality controls and au
 Records failing any validation rule are diverted from production parquet tables into partitioned quarantine storage (`data/lake/quarantine/`).
 
 | `2026-09-23` | **nse_bhavcopy** | `CENTEXT-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 39.7% without registered corporate action (prev=3.63, close=2.19) | **WARNING** |
+| `2026-09-30` | **nse_bhavcopy** | `ARMEE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=375.0, close=300.0) | **WARNING** |
 | `2026-09-18` | **nse_bhavcopy** | `ORIANA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 79.9% without registered corporate action (prev=1348.85, close=271.75) | **WARNING** |
 | `2026-09-02` | **nse_bhavcopy** | `ANNU` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 23.6% without registered corporate action (prev=99.0, close=75.6) | **WARNING** |
 | `2026-09-02` | **nse_bhavcopy** | `INDIAGLYCO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 78.8% without registered corporate action (prev=1111.7, close=236.2) | **WARNING** |
 | `2026-09-02` | **nse_bhavcopy** | `RATNA-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 39.9% without registered corporate action (prev=27.35, close=16.45) | **WARNING** |
-| `2026-09-24` | **nse_bhavcopy** | `CHAVDA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 49.8% without registered corporate action (prev=140.0, close=70.3) | **WARNING** |
 
 ---
 
