@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-10-21 18:50:43 UTC`  
+**Timestamp**: `2026-10-22 18:44:48 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -37,12 +37,12 @@ This governance note formalizes the reconciliation-grade quality controls and au
 ### 3. Quarantine Workflow & Root-Cause Audit Trail
 Records failing any validation rule are diverted from production parquet tables into partitioned quarantine storage (`data/lake/quarantine/`).
 
-| `2026-10-08` | **nse_bhavcopy** | `BHAGYANGR` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 90.9% without registered corporate action (prev=454.55, close=41.4) | **WARNING** |
-| `2026-10-08` | **nse_bhavcopy** | `BUILDPRO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 80.8% without registered corporate action (prev=1302.0, close=250.2) | **WARNING** |
-| `2026-10-16` | **nse_bhavcopy** | `BANSALWIRE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 80.5% without registered corporate action (prev=315.6, close=61.65) | **WARNING** |
-| `2026-10-13` | **nse_bhavcopy** | `NATCO-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 33.0% without registered corporate action (prev=39.35, close=26.35) | **WARNING** |
-| `2026-10-07` | **nse_bhavcopy** | `ARIHANTACA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 55.3% without registered corporate action (prev=515.0, close=230.0) | **WARNING** |
-| `2026-10-06` | **nse_bhavcopy** | `BLSE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 49.6% without registered corporate action (prev=319.15, close=160.9) | **WARNING** |
+| `2026-09-23` | **nse_bhavcopy** | `CENTEXT-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 39.7% without registered corporate action (prev=3.63, close=2.19) | **WARNING** |
+| `2026-09-30` | **nse_bhavcopy** | `ARMEE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=375.0, close=300.0) | **WARNING** |
+| `2026-09-18` | **nse_bhavcopy** | `ORIANA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 79.9% without registered corporate action (prev=1348.85, close=271.75) | **WARNING** |
+| `2026-09-02` | **nse_bhavcopy** | `ANNU` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 23.6% without registered corporate action (prev=99.0, close=75.6) | **WARNING** |
+| `2026-09-02` | **nse_bhavcopy** | `INDIAGLYCO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 78.8% without registered corporate action (prev=1111.7, close=236.2) | **WARNING** |
+| `2026-09-02` | **nse_bhavcopy** | `RATNA-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 39.9% without registered corporate action (prev=27.35, close=16.45) | **WARNING** |
 
 ---
 
