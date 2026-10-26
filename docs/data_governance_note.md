@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-10-23 18:39:19 UTC`  
+**Timestamp**: `2026-10-26 20:05:03 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
