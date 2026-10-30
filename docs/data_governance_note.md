@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-10-29 19:47:25 UTC`  
+**Timestamp**: `2026-10-30 19:37:46 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -42,7 +42,7 @@ Records failing any validation rule are diverted from production parquet tables 
 | `2026-10-09` | **nse_bhavcopy** | `AISL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 52.5% without registered corporate action (prev=70.35, close=33.45) | **WARNING** |
 | `2026-10-09` | **nse_bhavcopy** | `MOLDTECH` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 47.5% without registered corporate action (prev=209.95, close=110.22) | **WARNING** |
 | `2026-10-09` | **nse_bhavcopy** | `MOLDTKPAC` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 50.0% without registered corporate action (prev=652.1, close=326.35) | **WARNING** |
-| `2026-10-22` | **nse_bhavcopy** | `JSWDULUX` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 89.9% without registered corporate action (prev=2994.8, close=302.2) | **WARNING** |
+| `2026-10-30` | **nse_bhavcopy** | `SHIVAM-RE1` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 25.6% without registered corporate action (prev=0.82, close=0.61) | **WARNING** |
 
 ---
 
