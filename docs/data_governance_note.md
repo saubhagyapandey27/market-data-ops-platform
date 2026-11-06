@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-11-05 21:11:08 UTC`  
+**Timestamp**: `2026-11-06 20:30:53 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -37,12 +37,12 @@ This governance note formalizes the reconciliation-grade quality controls and au
 ### 3. Quarantine Workflow & Root-Cause Audit Trail
 Records failing any validation rule are diverted from production parquet tables into partitioned quarantine storage (`data/lake/quarantine/`).
 
+| `2026-11-06` | **nse_bhavcopy** | `KMEW` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 79.2% without registered corporate action (prev=3143.3, close=652.8) | **WARNING** |
 | `2026-11-04` | **nse_bhavcopy** | `CONCORDBIO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 46.6% without registered corporate action (prev=1227.9, close=655.5) | **WARNING** |
 | `2026-11-04` | **nse_bhavcopy** | `ENNATURE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 62.2% without registered corporate action (prev=665.05, close=251.7) | **WARNING** |
 | `2026-11-02` | **nse_bhavcopy** | `ANLON` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 22.1% without registered corporate action (prev=664.75, close=518.0) | **WARNING** |
 | `2026-11-05` | **nse_bhavcopy** | `GNRL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 88.5% without registered corporate action (prev=106.16, close=12.2) | **WARNING** |
 | `2026-10-22` | **nse_bhavcopy** | `JSWDULUX` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 89.9% without registered corporate action (prev=2994.8, close=302.2) | **WARNING** |
-| `2026-10-22` | **nse_bhavcopy** | `OLAELEC-RE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 40.0% without registered corporate action (prev=6.05, close=3.63) | **WARNING** |
 
 ---
 
