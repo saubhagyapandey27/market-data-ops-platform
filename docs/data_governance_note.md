@@ -2,7 +2,7 @@
 
 **Document ID**: `GOV-MD-2025-Q1`  
 **Classification**: Audit & Risk Management  
-**Timestamp**: `2026-11-19 22:23:51 UTC`  
+**Timestamp**: `2026-11-20 21:56:02 UTC`  
 **Data Feeds**: NSE Bhavcopy (Equities), India VIX, AMFI Mutual Fund NAVs, RBI FX Reference Rates  
 **Storage Architecture**: Partitioned Parquet Data Lake (`feed/year=YYYY/month=MM`) via DuckDB
 
@@ -37,12 +37,12 @@ This governance note formalizes the reconciliation-grade quality controls and au
 ### 3. Quarantine Workflow & Root-Cause Audit Trail
 Records failing any validation rule are diverted from production parquet tables into partitioned quarantine storage (`data/lake/quarantine/`).
 
-| `2026-11-06` | **nse_bhavcopy** | `KMEW` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 79.2% without registered corporate action (prev=3143.3, close=652.8) | **WARNING** |
-| `2026-11-04` | **nse_bhavcopy** | `CONCORDBIO` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 46.6% without registered corporate action (prev=1227.9, close=655.5) | **WARNING** |
-| `2026-11-04` | **nse_bhavcopy** | `ENNATURE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 62.2% without registered corporate action (prev=665.05, close=251.7) | **WARNING** |
-| `2026-11-02` | **nse_bhavcopy** | `ANLON` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 22.1% without registered corporate action (prev=664.75, close=518.0) | **WARNING** |
-| `2026-11-05` | **nse_bhavcopy** | `GNRL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 88.5% without registered corporate action (prev=106.16, close=12.2) | **WARNING** |
-| `2026-11-13` | **nse_bhavcopy** | `PASHUPATI` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 58.1% without registered corporate action (prev=83.69, close=35.1) | **WARNING** |
+| `2026-09-08` | **nse_bhavcopy** | `ATALREAL` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=26.5, close=21.2) | **WARNING** |
+| `2026-09-30` | **nse_bhavcopy** | `ARMEE` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=375.0, close=300.0) | **WARNING** |
+| `2026-09-24` | **nse_bhavcopy** | `CHAVDA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 49.8% without registered corporate action (prev=140.0, close=70.3) | **WARNING** |
+| `2026-09-24` | **nse_bhavcopy** | `POLICYBZR` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 36.0% without registered corporate action (prev=1886.3, close=1207.2) | **WARNING** |
+| `2026-09-24` | **nse_bhavcopy** | `TURTLEMINT` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=136.3, close=109.04) | **WARNING** |
+| `2026-09-15` | **nse_bhavcopy** | `PNCINFRA` | `UNEXPLAINED_PRICE_SHOCK` | Overnight drop of 20.0% without registered corporate action (prev=175.4, close=140.32) | **WARNING** |
 
 ---
 
